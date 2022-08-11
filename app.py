@@ -77,7 +77,7 @@ def generate_random_unexperienced_players(team):
 		if random_player in drafted_player:
 			continue
 	return
-	
+
 
 def display_player_stats(team):
 	"""displays players stats based on team"""
@@ -158,3 +158,4 @@ def main():
 
 if __name__ == "__main__":
 	main()
+	
