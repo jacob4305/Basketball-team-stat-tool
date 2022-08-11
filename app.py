@@ -77,7 +77,7 @@ def generate_random_unexperienced_players(team):
 		if random_player in drafted_player:
 			continue
 	return
-
+	
 
 def display_player_stats(team):
 	"""displays players stats based on team"""
@@ -122,9 +122,9 @@ def menu():
 	"""where the user interacts with the program"""
 	active = True
 	while active:
-		print("~~~Enter help for command options~~~")
+		print("~~~Enter the team name for team stats~~~\n~~~Enter quit to end program~~~")
 		print("~~~Teams are {}, {}, {}~~~".format(teams[0], teams[1], teams[2],))
-		user_input = input("Enter team name for team stats: ").lower()
+		user_input = input("Enter (team name) or (quit): ").lower()
 		print('\n')
 		if user_input == "panthers":
 			display_team_stats(final_teams['Panthers'], "~~Panthers~~:")
